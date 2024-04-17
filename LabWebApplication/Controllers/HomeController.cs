@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using LabWebApplication.Models;
+using LabWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LabWebApplication.Controllers
