@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace DotNetDrinks.Models
 {
+
     public class Cart
     {
         public int Id { get; set; }

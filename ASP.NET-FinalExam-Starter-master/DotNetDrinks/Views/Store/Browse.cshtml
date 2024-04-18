@@ -30,15 +30,19 @@ else
                     <p>@product.Brand</p>
                     @if (String.IsNullOrEmpty(product.Image))
                     {
-                        <img src="~/img/products/drinks-placeholder.png"
-                             alt="Placeholder Image for @product.Name"
-                             class="img-thumbnail" />
+                        <a href="~/img/products/drinks-placeholder.png" target="_blank">
+                            <img src="~/img/products/drinks-placeholder.png"
+                                 alt="Placeholder Image for @product.Name"
+                                 class="img-thumbnail" />
+                        </a>
                     }
                     else
                     {
-                        <img src="~/img/products/@product.Image"
-                             alt="Logo for @product.Name"
-                             class="img-thumbnail" />
+                        <a href="~/img/products/@product.Image" target="_blank">
+                            <img src="~/img/products/@product.Image"
+                                 alt="Logo for @product.Name"
+                                 class="img-thumbnail" />
+                        </a>
                     }
                     <form method="post" action="/Store/AddToCart">
                         <input type="hidden" id="ProductId" name="ProductId" value="@product.Id" />
@@ -54,4 +58,3 @@ else
         </div>
     }
 </section>
-
